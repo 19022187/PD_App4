@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         lvBusArr = findViewById(R.id.listViewBusArr);
 
         busArrList = new ArrayList<>();
-        BusArrival item1 = new BusArrival("Candice", 92205555, "candice@gmail.com", 1);
+        BusArrival item1 = new BusArrival("Candice", "92205555", "candice@gmail.com", 1);
         busArrList.add(item1);
 
         busArrAdapter = new CustomAdapter(this, R.layout.row, busArrList);

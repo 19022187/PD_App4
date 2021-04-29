@@ -36,7 +36,7 @@ public class CustomAdapter extends ArrayAdapter {
         BusArrival currentItem = busArr.get(position);
         tvName.setText(currentItem.getBusNum());
         if (currentItem.getPreferredMode() == 0){
-            tvInfo.setText(currentItem.getMobileNumber());
+            tvInfo.setText(currentItem.getTime());
         }
         else {
             tvInfo.setText(currentItem.getEmail());

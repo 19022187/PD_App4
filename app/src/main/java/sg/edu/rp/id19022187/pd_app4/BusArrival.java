@@ -3,16 +3,16 @@ package sg.edu.rp.id19022187.pd_app4;
 public class BusArrival {
 
     private String busNum;
-    private int mobileNumber;
+    private String time;
     private String email;
     private int preferredMode;
 
     // TODO: Question 1 - Constructor
 
 
-    public BusArrival(String busNum, int mobileNumber, String email, int preferredMode) {
+    public BusArrival(String busNum, String time, String email, int preferredMode) {
         this.busNum = busNum;
-        this.mobileNumber = mobileNumber;
+        this.time = time;
         this.email = email;
         this.preferredMode = preferredMode;
     }
@@ -21,12 +21,12 @@ public class BusArrival {
         return busNum;
     }
 
-    public int getMobileNumber() {
-        return mobileNumber;
+    public String getTime() {
+        return time;
     }
 
-    public void setMobileNumber(int mobileNumber) {
-        this.mobileNumber = mobileNumber;
+    public void setTime(String time) {
+        this.time = time;
     }
 
     public String getEmail() {
