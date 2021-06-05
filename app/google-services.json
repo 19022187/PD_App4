@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "531648175933",
+    "firebase_url": "https://c302-p12-db975.firebaseio.com",
+    "project_id": "c302-p12-db975",
+    "storage_bucket": "c302-p12-db975.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531648175933:android:57f11129fc2fde631b2f54",
+        "android_client_info": {
+          "package_name": "sg.edu.rp.id19022187.pd_app4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531648175933-nraup66jc2u1bu1932rpr5oklgekfni9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5AkHlTP4ou80wgRpSNzQi2JrZEHCUOko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531648175933-nraup66jc2u1bu1932rpr5oklgekfni9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

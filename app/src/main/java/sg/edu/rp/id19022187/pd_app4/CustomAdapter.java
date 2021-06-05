@@ -9,10 +9,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class CustomAdapter extends ArrayAdapter {
+public class CustomAdapter extends ArrayAdapter<BusArrival> {
     Context parent_context;
     int layout_id;
-    ArrayList<BusArrival> busArr;
+    private ArrayList<BusArrival> busArr;
 
     public CustomAdapter(Context context, int resource, ArrayList<BusArrival> objects) {
         super(context, resource, objects);
@@ -28,19 +28,18 @@ public class CustomAdapter extends ArrayAdapter {
 
         View rowView = inflater.inflate(layout_id, parent, false);
 
-        // TODO: Question 6 - Write the codes so that the contact information will be shown correctly in the ListView
-        TextView tvName = rowView.findViewById(R.id.name);
-        TextView tvInfo = rowView.findViewById(R.id.contactInfo);
+        TextView tvBus = rowView.findViewById(R.id.bus);
+        TextView tvTime1 = rowView.findViewById(R.id.time1);
+        TextView tvTime2 = rowView.findViewById(R.id.time2);
+        TextView tvTime3 = rowView.findViewById(R.id.time3);
 
 
         BusArrival currentItem = busArr.get(position);
-        tvName.setText(currentItem.getBusNum());
-        if (currentItem.getPreferredMode() == 0){
-            tvInfo.setText(currentItem.getTime());
-        }
-        else {
-            tvInfo.setText(currentItem.getEmail());
-        }
+        tvBus.setText(currentItem.getBusNum());
+
+        tvTime1.setText(currentItem.getTime1());
+        tvTime2.setText(currentItem.getTime2());
+        tvTime3.setText(currentItem.getTime3());
 
         return rowView;
     }
