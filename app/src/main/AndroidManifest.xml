@@ -17,6 +17,7 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyA5AkHlTP4ou80wgRpSNzQi2JrZEHCUOko" />
+        <activity android:name=".BusStopDetails" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
